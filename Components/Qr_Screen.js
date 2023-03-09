@@ -249,7 +249,7 @@ export default function Qr_Screen({ navigation }) {
       <View style={styles.image_container}>
         {imageShow && (
           <Image
-            source={require("../assets/icon.png")}
+            source={require("./images/photo.jpg")}
             style={styles.images}
             resizeMode="contain"
           />
@@ -286,12 +286,13 @@ const styles = StyleSheet.create({
   },
   Hint: {
     fontSize: 25,
-    marginTop: 5,
+    marginTop: 20,
     textAlign: "center",
   },
   HintNext: {
     fontSize: 25,
-    marginTop: 5,
+    marginTop: 20,
+    marginBottom: 30,
     textAlign: "center",
   },
   maintext: {
@@ -313,9 +314,9 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   images: {
-    width: 200,
-    height: 200,
-    marginTop: 40,
-    marginLeft: 100,
+    width: 300,
+    height: 300,
+    marginTop: 20,
+    marginLeft: 55,
   },
 });
